@@ -31,6 +31,14 @@
 */
 
 //CODE HERE
+const pizza = {
+    name: "veggie",
+    price: 19.99,
+    category: 'appetizer',
+    popularity: 10,
+    rating: 10,
+    tags: ['health', 'gluten-free', 'family-friendly']
+}
 
 
 
@@ -42,7 +50,8 @@
     Use dot notation to access the value.
 */
 
-//CODE HERE
+pizzaPop = pizza.popularity;
+console.log(pizzaPop);
 
 
 /*
@@ -52,7 +61,8 @@
     get the value.
 */
 
-//CODE HERE
+pizzaTag = pizza.tags[1];
+console.log(pizzaTag);
 
 
 /*
@@ -62,7 +72,8 @@
     Print the value of your new price variable.
 */
 
-//CODE HERE
+let { price } = pizza;
+console.log(price);
 
 
 /*
@@ -72,7 +83,8 @@
     Print the value of your category variable. 
 */
 
-//CODE HERE
+let { category } = pizza;
+console.log(category);
 
 
 //////////////////PROBLEM 3////////////////////
@@ -88,7 +100,48 @@
 */
 
 //CODE HERE
-
+const foodArr = [
+    {
+    name: "breadsticks",
+    price: 4.99,
+    category: 'appetizer',
+    popularity: 7.5,
+    rating: 8,
+    tags: ['bread', 'snack', 'finger-food']
+},
+{
+    name: "soda",
+    price: 1.99,
+    category: 'drink',
+    popularity: 5,
+    rating: 6,
+    tags: ['beverage', 'fizzy', 'ice-cold']
+},
+{
+    name: "chocolate silk pie",
+    price: 7.99,
+    category: 'dessert',
+    popularity: 10,
+    rating: 10,
+    tags: ['indulgent', 'rich', 'sweet']
+},
+{
+    name: "apple pie",
+    price: 7.99,
+    category: 'dessert',
+    popularity: 9.5,
+    rating: 8,
+    tags: ['seasonal', 'fall-flavors', 'sweet']
+},
+{
+    name: "side salad",
+    price: 6.99,
+    category: 'appetizer',
+    popularity: 7.5,
+    rating: 9,
+    tags: ['seasonal', 'health', 'crunchy']
+}
+]
 
 
 //////////////////PROBLEM 4////////////////////
@@ -105,7 +158,7 @@
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+
 
 
 
