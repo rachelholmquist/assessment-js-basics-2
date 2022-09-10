@@ -158,13 +158,11 @@ const foodArr = [
     your food objects has.
 */
 
-const foodTags = arr => {
-    const filtered = arr.filter(tags => tags.includes("health"));
-    return filtered[0]
-}
+let sweetFoods = foodArr.filter(food => {
+    return food.tags.includes('sweet');
+})
 
-checkTags = foodTags(foodArr);
-console.log(checkTags);
+console.log(sweetFoods);
 
 
 
