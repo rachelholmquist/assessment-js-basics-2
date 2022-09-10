@@ -86,7 +86,7 @@ console.log(cartTotalCheck);
 */
 
 /*
-   The properties in customer object will have are name, email, phone number, and address. The name is important so they can remember their name,
+   The properties in customer object will be name, email, phone number, and address. The name is important so they can remember their name,
    email and address are important to send marketing/special deals to the customer. Phone number is so when a specific customer calls to place
    an order their info will pop up when someone answers the call.
 
