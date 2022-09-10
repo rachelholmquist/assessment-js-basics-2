@@ -35,7 +35,9 @@ const cart = [
 
 //CODE HERE
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
+const total = 0;
+const summedPrice = cart.reduce((acc, current) => acc + current.price, total);
+console.log(summedPrice);
 
 
 //////////////////PROBLEM 2////////////////////
@@ -53,7 +55,13 @@ const cart = [
     decimals, for example: .06 for a 6% tax.
 */
 
-//CODE HERE
+function calcFinalPrice(cartTotal, couponValue, tax){
+    cartWithTax = cartTotal + (cartTotal * tax);
+    return cartWithTax - couponValue;
+}
+
+cartTotalCheck = (calcFinalPrice(11.99, 1.99, 0.06));
+console.log(cartTotalCheck);
 
 
 
@@ -78,7 +86,12 @@ const cart = [
 */
 
 /*
-    TEXT ANSWER HERE
+   The properties in customer object will have are name, email, phone number, and address. The name is important so they can remember their name,
+   email and address are important to send marketing/special deals to the customer. Phone number is so when a specific customer calls to place
+   an order their info will pop up when someone answers the call.
+
+   name, email and address will all be string data types. they have symbols and numbers in them but mostly letters.
+   phone number will just be numbers since thats what a phone number is.
 
 */
 
@@ -87,4 +100,9 @@ const cart = [
     guidelines.
 */
 
-//CODE HERE
+const customers = {
+    name: 'rachel',
+    email: 'rachel@gmail.com',
+    phoneNumber: 3605558756,
+    address: '123 rainbow lane'
+}

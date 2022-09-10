@@ -7,6 +7,8 @@
     and filtering those arrays. 
 */
 
+// const { filter } = require("vue/types/umd");
+
 
 //////////////////PROBLEM 1////////////////////
 /*  
@@ -156,8 +158,13 @@ const foodArr = [
     your food objects has.
 */
 
-//CODE HERE
+const foodTags = arr => {
+    const filtered = arr.filter(tags => tags.includes("health"));
+    return filtered[0]
+}
 
+checkTags = foodTags(foodArr);
+console.log(checkTags);
 
 
 
